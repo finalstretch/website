@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- The Final Stretch Project — embossed seal.
+       True emboss: raised faces carry the coin's own gradient, so the
+       relief is drawn only by the light (top-left) and shadow
+       (bottom-right) slivers at each edge. -->
+  <defs>
+    <radialGradient id="dome" cx="36%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#3f8fee"/>
+      <stop offset="55%" stop-color="#0969da"/>
+      <stop offset="100%" stop-color="#05469a"/>
+    </radialGradient>
+    <radialGradient id="domeU" gradientUnits="userSpaceOnUse"
+      cx="46" cy="38" r="109">
+      <stop offset="0%" stop-color="#3f8fee"/>
+      <stop offset="55%" stop-color="#0969da"/>
+      <stop offset="100%" stop-color="#05469a"/>
+    </radialGradient>
+    <linearGradient id="bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#032b5c" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="groove" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#032b5c" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4"/>
+    </linearGradient>
+    <path id="arcTop" d="M 12.5 64 A 51.5 51.5 0 0 1 115.5 64"/>
+    <path id="arcBottom" d="M 7 64 A 57 57 0 0 0 121 64"/>
+  </defs>
+
+  <!-- coin body -->
+  <circle cx="64" cy="64" r="64" fill="url(#dome)"/>
+  <circle cx="64" cy="64" r="62.6" fill="none" stroke="url(#bevel)" stroke-width="2.2"/>
+  <circle cx="64" cy="64" r="48" fill="none" stroke="url(#groove)" stroke-width="1.4"/>
+
+  <!-- embossed lettering: light sliver, shadow sliver, coin-colored face -->
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+     font-weight="700" text-anchor="middle" letter-spacing="1.15">
+    <g fill="#bcdaff" transform="translate(-0.75,-0.75)">
+      <text font-size="8.4"><textPath href="#arcTop" startOffset="50%">THE FINAL STRETCH PROJECT</textPath></text>
+      <text font-size="7.2" letter-spacing="2.2"><textPath href="#arcBottom" startOffset="50%">FINALSTRETCH.ORG</textPath></text>
+    </g>
+    <g fill="#03294f" transform="translate(0.75,0.75)">
+      <text font-size="8.4"><textPath href="#arcTop" startOffset="50%">THE FINAL STRETCH PROJECT</textPath></text>
+      <text font-size="7.2" letter-spacing="2.2"><textPath href="#arcBottom" startOffset="50%">FINALSTRETCH.ORG</textPath></text>
+    </g>
+    <g fill="url(#domeU)">
+      <text font-size="8.4"><textPath href="#arcTop" startOffset="50%">THE FINAL STRETCH PROJECT</textPath></text>
+      <text font-size="7.2" letter-spacing="2.2"><textPath href="#arcBottom" startOffset="50%">FINALSTRETCH.ORG</textPath></text>
+    </g>
+    <g fill="#ffffff" opacity="0.08">
+      <text font-size="8.4"><textPath href="#arcTop" startOffset="50%">THE FINAL STRETCH PROJECT</textPath></text>
+      <text font-size="7.2" letter-spacing="2.2"><textPath href="#arcBottom" startOffset="50%">FINALSTRETCH.ORG</textPath></text>
+    </g>
+  </g>
+
+  <!-- rim separators, same relief -->
+  <g>
+    <circle cx="9.25" cy="69.75" r="1.7" fill="#bcdaff"/>
+    <circle cx="10.75" cy="71.25" r="1.7" fill="#03294f"/>
+    <circle cx="10" cy="70.5" r="1.7" fill="url(#domeU)"/>
+    <circle cx="117.25" cy="69.75" r="1.7" fill="#bcdaff"/>
+    <circle cx="118.75" cy="71.25" r="1.7" fill="#03294f"/>
+    <circle cx="118" cy="70.5" r="1.7" fill="url(#domeU)"/>
+  </g>
+
+  <!-- embossed centre mark: light sliver, shadow sliver, coin-colored face -->
+  <g stroke-linecap="round" fill="none">
+    <g stroke="#bcdaff" transform="translate(-0.85,-0.85)">
+      <circle cx="84" cy="44" r="8" stroke-width="4"/>
+      <line x1="76.9" y1="51.1" x2="65" y2="63" stroke-width="4" stroke-dasharray="0.2 8"/>
+      <line x1="65" y1="63" x2="49.9" y2="78.1" stroke-width="5"/>
+      <circle cx="44" cy="84" r="7" fill="#bcdaff" stroke="none"/>
+    </g>
+    <g stroke="#03294f" transform="translate(0.85,0.85)">
+      <circle cx="84" cy="44" r="8" stroke-width="4"/>
+      <line x1="76.9" y1="51.1" x2="65" y2="63" stroke-width="4" stroke-dasharray="0.2 8"/>
+      <line x1="65" y1="63" x2="49.9" y2="78.1" stroke-width="5"/>
+      <circle cx="44" cy="84" r="7" fill="#03294f" stroke="none"/>
+    </g>
+    <g stroke="url(#domeU)">
+      <circle cx="84" cy="44" r="8" stroke-width="4"/>
+      <line x1="76.9" y1="51.1" x2="65" y2="63" stroke-width="4" stroke-dasharray="0.2 8"/>
+      <line x1="65" y1="63" x2="49.9" y2="78.1" stroke-width="5"/>
+      <circle cx="44" cy="84" r="7" fill="url(#domeU)" stroke="none"/>
+    </g>
+  </g>
+</svg>

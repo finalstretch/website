@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Height mask: white = raised. Includes rim ring, groove band edges,
+       lettering, separators, centre mark. -->
+  <rect width="128" height="128" fill="#000000"/>
+  <defs>
+    <path id="arcTop" d="M 12.5 64 A 51.5 51.5 0 0 1 115.5 64"/>
+    <path id="arcBottom" d="M 7 64 A 57 57 0 0 0 121 64"/>
+  </defs>
+
+  <!-- raised outer rim band -->
+  <circle cx="64" cy="64" r="62.2" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+  <!-- inner groove ridge -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+     font-weight="700" text-anchor="middle" letter-spacing="1.15" fill="#ffffff">
+    <text font-size="8.4"><textPath href="#arcTop" startOffset="50%">THE FINAL STRETCH PROJECT</textPath></text>
+    <text font-size="7.2" letter-spacing="2.2"><textPath href="#arcBottom" startOffset="50%">FINALSTRETCH.ORG</textPath></text>
+  </g>
+
+  <circle cx="10" cy="70.5" r="1.7" fill="#ffffff"/>
+  <circle cx="118" cy="70.5" r="1.7" fill="#ffffff"/>
+
+  <g stroke="#ffffff" stroke-linecap="round" fill="none">
+    <circle cx="84" cy="44" r="8" stroke-width="4"/>
+    <line x1="75" y1="53" x2="66.5" y2="61.5" stroke-width="4" stroke-dasharray="0.2 8.4"/>
+    <line x1="63.5" y1="64.5" x2="49.9" y2="78.1" stroke-width="5"/>
+    <circle cx="44" cy="84" r="7" fill="#ffffff" stroke="none"/>
+  </g>
+</svg>
