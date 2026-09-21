@@ -133,17 +133,6 @@ p:last-child { margin-bottom: 0; }
 
 a { color: var(--accent-ink); text-underline-offset: 3px; }
 
-.kicker {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--accent-ink);
-  margin: 0 0 0.75rem;
-}
-
-.kicker::before { content: "// "; opacity: 0.6; }
-
 /* ---- Accessibility helpers ---- */
 
 .skip-link {
@@ -603,8 +592,6 @@ a { color: var(--accent-ink); text-underline-offset: 3px; }
   color: var(--on-accent-soft);
   margin: 0 0 1.5rem;
 }
-
-.band-accent .test-kicker::before { content: "// "; opacity: 0.6; }
 
 .band-accent .test-note {
   max-width: 44rem;
